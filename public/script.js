@@ -7,7 +7,7 @@ function generateQR() {
 
   if (mytext !== "" && mysize === "150") {
     myImg.src = gApi + "150x150" + "&chl=" + mytext;
-  } else if (mytext == "" && mysize === "200") {
+  } else if (mytext !== "" && mysize === "200") {
     myImg.src = gApi + "200x200" + "&chl=" + mytext;
   } else if (mytext !== "" && mysize === "250") {
     myImg.src = gApi + "250x250" + "&chl=" + mytext;
