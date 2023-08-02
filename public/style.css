@@ -19,7 +19,13 @@ body {
 .container {
   max-width: 40rem;
   max-height: 40rem;
-  background: rgba(9, 86, 201, 0.7);
+  /* background: rgba(9, 86, 201, 0.7); */
+  background: linear-gradient(
+    0deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(24, 93, 187, 1) 73%,
+    rgba(0, 212, 255, 1) 100%
+  );
   /* position: relative; */
   display: flex;
   flex-direction: column;
@@ -100,8 +106,9 @@ button {
 }
 
 button:active {
-  transform: scale(1);
-  transition: all 1s ease;
+  transform: translateX(5px) translateY(5px);
+  box-shadow: none;
+  transition: all 0.3s ease;
 }
 
 footer {
